@@ -1,31 +1,36 @@
-# Structured Irritation: Current Experimental Data
+# Structured Irritation: Experimental Data
 
-**Selective Answerability and Case-Bound Evidence**
+This repository contains the data and analysis for **Selective Answerability and Case-Bound Evidence**. The experiment tests whether models repair incorrect answers with competent evidence, preserve correct answers, and resist redirection by records that lack authority over the active case.
 
-The study evaluates whether competent evidence repairs an incorrect commitment or preserves a correct one, and whether records without standing leave the commitment unchanged. Case identity, contract, state hash, and integrity are manipulated independently.
+## Study at a glance
 
-## Evaluation
+- **Models:** Qwen 2.5 32B, Llama 3.3 70B, and GPT-5.6 Luna.
+- **Design:** 64 cases per model, each with one first response fixed across 15 evidence conditions; **3,072 model calls** in total.
+- **Tasks:** type validation, date intervals, URL conversion, and synthetic regional policy.
+- **Evidence checks:** case identity, contract, state hash, and integrity.
 
-Each configuration contributes 64 first responses and 960 continuations across fifteen paired conditions. Each actual first response is fixed across all conditions: **3,072 calls** across Qwen 2.5 32B, Llama 3.3 70B, and GPT-5.6 Luna. Four task families cover type validation, date intervals, URL conversion, and synthetic regional policy.
+## What the two folders contain
 
-[The acquisition archive](grounding_binding_v5/) contains the protocol, cases, prompts, semantic reference implementation, model settings, raw observations, primary analysis, and checksums. [Results](grounding_binding_v5/RESULTS.md) report the condition-level outcomes.
+Both folders belong to **the same experiment** and use the same observations.
 
-[Supplementary descriptive analysis](supplementary_analysis/) applies the controller rules to observed first responses and reports accuracy by reference label and task family. It distinguishes corrections from preservation and identifies the composition of repair opportunities. This analysis is post-collection; the acquisition files remain frozen.
+| Folder | Contents |
+| --- | --- |
+| [`grounding_binding_v5/`](grounding_binding_v5/) | Raw model responses, cases and prompts, protocol, model settings, reference validator, condition-level results, and file checksums. |
+| [`supplementary_analysis/`](supplementary_analysis/) | Controller comparisons on the actual first responses, correction and preservation counts, and first-stage accuracy by task family and answer label. |
 
-## Verification
+Start with the [experiment results](grounding_binding_v5/RESULTS.md), the [protocol](grounding_binding_v5/PROTOCOL.md), or the [additional analysis results](supplementary_analysis/observed_baselines.json).
 
-From the repository root, without new model calls:
+## Verify and reproduce
+
+Run from the repository root with Python 3. These commands use the included observations and make no model calls:
 
 ```sh
 python3 grounding_binding_v5/verify_archive.py
 python3 supplementary_analysis/observed_baselines.py
 ```
 
-Verify the acquisition archive's files:
+Check file integrity:
 
 ```sh
-cd grounding_binding_v5
-shasum -a 256 -c SHA256SUMS
+(cd grounding_binding_v5 && shasum -a 256 -c SHA256SUMS)
 ```
-
-The experiment measures application of explicit admissibility rules. Each configuration has one observed continuation per case and condition. Luna's five initial errors all have reference label B; its observed repair result concerns A-to-B transitions.
