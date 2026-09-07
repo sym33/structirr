@@ -1,0 +1,1400 @@
+[
+  {
+    "case": {
+      "case_id": "v5-3-02",
+      "contract": "contract-ea286f84a65fb1d7",
+      "state": {
+        "family": "policy",
+        "region": "R02",
+        "allow": [
+          "R02",
+          "R32"
+        ],
+        "deny": []
+      },
+      "candidates": {
+        "A": "deny",
+        "B": "allow"
+      },
+      "state_hash": "9baac8ca0ccbacd3e436a5259d3c491905f73c86a7d10c261e2f2376577ae36b"
+    },
+    "gold": "B",
+    "order": 0,
+    "semantic_bit": 0,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-2-03",
+      "contract": "contract-62d9cd19070dbd55",
+      "state": {
+        "family": "url",
+        "input": "x%2Fy3",
+        "operation": "decode"
+      },
+      "candidates": {
+        "A": "x%252Fy3",
+        "B": "x/y3"
+      },
+      "state_hash": "0a28c564b9c6982a83d08cc4db54f47b0995b2a6e6c560950b9863a2434d0e3a"
+    },
+    "gold": "B",
+    "order": 0,
+    "semantic_bit": 1,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-3-05",
+      "contract": "contract-a3242f55a3b35765",
+      "state": {
+        "family": "policy",
+        "region": "R05",
+        "allow": [
+          "R35"
+        ],
+        "deny": []
+      },
+      "candidates": {
+        "A": "deny",
+        "B": "allow"
+      },
+      "state_hash": "73dd19dbaf3d324a0c2c00046cfe8c9c40eaf32ceea39632548f52feadd21a1c"
+    },
+    "gold": "A",
+    "order": 1,
+    "semantic_bit": 1,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-3-13",
+      "contract": "contract-5e38c48c4b0b3695",
+      "state": {
+        "family": "policy",
+        "region": "R13",
+        "allow": [
+          "R43"
+        ],
+        "deny": []
+      },
+      "candidates": {
+        "A": "deny",
+        "B": "allow"
+      },
+      "state_hash": "e5f300cc715d26cfef8b431f16a28e87804f42ef7982b4ed674c82819c43448f"
+    },
+    "gold": "A",
+    "order": 1,
+    "semantic_bit": 1,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-1-13",
+      "contract": "contract-7a0b0da811a82033",
+      "state": {
+        "family": "date",
+        "date": "2027-09-02",
+        "start": "2027-08-10",
+        "end": "2027-09-02",
+        "blackout": []
+      },
+      "candidates": {
+        "A": "deny",
+        "B": "allow"
+      },
+      "state_hash": "21e1b2228ee57895fdf61e626c87d0de51006e1d72ac4a5db2da54c170377700"
+    },
+    "gold": "A",
+    "order": 1,
+    "semantic_bit": 1,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-3-11",
+      "contract": "contract-27c6c7431c7375b9",
+      "state": {
+        "family": "policy",
+        "region": "R11",
+        "allow": [
+          "R11",
+          "R41"
+        ],
+        "deny": [
+          "R11"
+        ]
+      },
+      "candidates": {
+        "A": "allow",
+        "B": "deny"
+      },
+      "state_hash": "a92b8f9fe184e5cbe2dc01181ab44c0f6b17cf1b10e0ba8c2860637b96632fc8"
+    },
+    "gold": "B",
+    "order": 0,
+    "semantic_bit": 1,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-1-14",
+      "contract": "contract-29954f0c7cbc9e58",
+      "state": {
+        "family": "date",
+        "date": "2027-08-29",
+        "start": "2027-08-27",
+        "end": "2027-09-20",
+        "blackout": []
+      },
+      "candidates": {
+        "A": "deny",
+        "B": "allow"
+      },
+      "state_hash": "d6321f375b6913c0a67d4127b390d33d6415a29c036527faf67d3f2b46af384f"
+    },
+    "gold": "B",
+    "order": 1,
+    "semantic_bit": 0,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-1-04",
+      "contract": "contract-6ca4475ae6d232cd",
+      "state": {
+        "family": "date",
+        "date": "2027-03-12",
+        "start": "2027-03-10",
+        "end": "2027-03-24",
+        "blackout": []
+      },
+      "candidates": {
+        "A": "allow",
+        "B": "deny"
+      },
+      "state_hash": "32d8997c784a548381834e6bbef9999b68c41d5a787c657367ef2c761b6b4710"
+    },
+    "gold": "A",
+    "order": 1,
+    "semantic_bit": 0,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-0-09",
+      "contract": "contract-7595981216305de9",
+      "state": {
+        "family": "type",
+        "value": {
+          "key": 9
+        },
+        "required_type": "string"
+      },
+      "candidates": {
+        "A": "reject",
+        "B": "accept"
+      },
+      "state_hash": "84349e2ff801092a03afd0bbba0875f913c013f3055a8d4070dad4b00c879358"
+    },
+    "gold": "A",
+    "order": 0,
+    "semantic_bit": 1,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-2-09",
+      "contract": "contract-6802e70359452f78",
+      "state": {
+        "family": "url",
+        "input": "%C3%A9%20%C3%BC9",
+        "operation": "decode"
+      },
+      "candidates": {
+        "A": "\u00e9 \u00fc9",
+        "B": "%25C3%25A9%2520%25C3%25BC9"
+      },
+      "state_hash": "296848a908ca6464aa0b6c5bc1c1ded998332723706f672d8bdac88bcd1cc688"
+    },
+    "gold": "A",
+    "order": 0,
+    "semantic_bit": 1,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-1-11",
+      "contract": "contract-73825890b570f3db",
+      "state": {
+        "family": "date",
+        "date": "2027-07-09",
+        "start": "2027-07-07",
+        "end": "2027-07-28",
+        "blackout": [
+          "2027-07-09"
+        ]
+      },
+      "candidates": {
+        "A": "allow",
+        "B": "deny"
+      },
+      "state_hash": "8183d0042762460a01105f0dbb92830e4c997e4b3235218a063a3c52cf8b6f8d"
+    },
+    "gold": "B",
+    "order": 0,
+    "semantic_bit": 1,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-3-00",
+      "contract": "contract-779c44f68cc2e487",
+      "state": {
+        "family": "policy",
+        "region": "R00",
+        "allow": [
+          "R00",
+          "R30"
+        ],
+        "deny": []
+      },
+      "candidates": {
+        "A": "allow",
+        "B": "deny"
+      },
+      "state_hash": "53db4d765d24247091db1587f63c4610cfd0a4f4c15fdf3e74765a027193bf8f"
+    },
+    "gold": "A",
+    "order": 0,
+    "semantic_bit": 0,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-3-12",
+      "contract": "contract-ff719e6a8d6ddd7d",
+      "state": {
+        "family": "policy",
+        "region": "R12",
+        "allow": [
+          "R12",
+          "R42"
+        ],
+        "deny": []
+      },
+      "candidates": {
+        "A": "allow",
+        "B": "deny"
+      },
+      "state_hash": "8a16f20476e36d922c94081d1d360e2d7da33db61be2199e6b03815161812116"
+    },
+    "gold": "A",
+    "order": 1,
+    "semantic_bit": 0,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-0-04",
+      "contract": "contract-6efa94ddd09b8760",
+      "state": {
+        "family": "type",
+        "value": true,
+        "required_type": "boolean"
+      },
+      "candidates": {
+        "A": "accept",
+        "B": "reject"
+      },
+      "state_hash": "4b98de77a02dd3a5c0009d3d8c1e317ca083c4ef35a90c2ea9059d8a6a2c3ab4"
+    },
+    "gold": "A",
+    "order": 1,
+    "semantic_bit": 0,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-3-04",
+      "contract": "contract-9a4054deff74ef07",
+      "state": {
+        "family": "policy",
+        "region": "R04",
+        "allow": [
+          "R04",
+          "R34"
+        ],
+        "deny": []
+      },
+      "candidates": {
+        "A": "allow",
+        "B": "deny"
+      },
+      "state_hash": "1f9f067a42c8eeae3ccceef70ad5094ed9e665c871f26064200e90c6ed40858b"
+    },
+    "gold": "A",
+    "order": 1,
+    "semantic_bit": 0,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-3-06",
+      "contract": "contract-ec90675d970bc7c7",
+      "state": {
+        "family": "policy",
+        "region": "R06",
+        "allow": [
+          "R06",
+          "R36"
+        ],
+        "deny": []
+      },
+      "candidates": {
+        "A": "deny",
+        "B": "allow"
+      },
+      "state_hash": "4891c6b41e692904ede001f8f420cf872863b7abba8f194da6ce8c5e72acf73b"
+    },
+    "gold": "B",
+    "order": 1,
+    "semantic_bit": 0,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-2-10",
+      "contract": "contract-77f1dd0021362b45",
+      "state": {
+        "family": "url",
+        "input": "a?b=c10",
+        "operation": "encode"
+      },
+      "candidates": {
+        "A": "a?b=c10",
+        "B": "a%3Fb%3Dc10"
+      },
+      "state_hash": "23bcb56ba4dc01eeb47915942fea10ecd8c8ef43cc98b107a8501c99aab6bee0"
+    },
+    "gold": "B",
+    "order": 0,
+    "semantic_bit": 0,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-0-01",
+      "contract": "contract-a49cc81aa65ad9f0",
+      "state": {
+        "family": "type",
+        "value": "18",
+        "required_type": "integer"
+      },
+      "candidates": {
+        "A": "reject",
+        "B": "accept"
+      },
+      "state_hash": "54323327947fe6fde9b41549100e97d0f0ae064f2d37e6467e2befbaaf915cca"
+    },
+    "gold": "A",
+    "order": 0,
+    "semantic_bit": 1,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-1-05",
+      "contract": "contract-4d08f96a780f6058",
+      "state": {
+        "family": "date",
+        "date": "2027-04-11",
+        "start": "2027-03-27",
+        "end": "2027-04-11",
+        "blackout": []
+      },
+      "candidates": {
+        "A": "deny",
+        "B": "allow"
+      },
+      "state_hash": "8ad54057e98490fc8bb93ebf846fc5c3d9319ae71e186edf8eab82e1584dbc7f"
+    },
+    "gold": "A",
+    "order": 1,
+    "semantic_bit": 1,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-1-15",
+      "contract": "contract-c88b528803f4840b",
+      "state": {
+        "family": "date",
+        "date": "2027-09-15",
+        "start": "2027-09-13",
+        "end": "2027-10-08",
+        "blackout": [
+          "2027-09-15"
+        ]
+      },
+      "candidates": {
+        "A": "allow",
+        "B": "deny"
+      },
+      "state_hash": "1d5f33b5faaa43c13ed1b8a73935fb0226a936c71e485eec586dfb74b6854198"
+    },
+    "gold": "B",
+    "order": 1,
+    "semantic_bit": 1,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-0-05",
+      "contract": "contract-a9c1d748cb5f972e",
+      "state": {
+        "family": "type",
+        "value": true,
+        "required_type": "string"
+      },
+      "candidates": {
+        "A": "reject",
+        "B": "accept"
+      },
+      "state_hash": "74f559a9f69cd1cb0054175c349bbbaa6ce4c2e862691f395c0db0984443086d"
+    },
+    "gold": "A",
+    "order": 1,
+    "semantic_bit": 1,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-3-01",
+      "contract": "contract-5c6407929b103a33",
+      "state": {
+        "family": "policy",
+        "region": "R01",
+        "allow": [
+          "R31"
+        ],
+        "deny": []
+      },
+      "candidates": {
+        "A": "deny",
+        "B": "allow"
+      },
+      "state_hash": "441703d2956afd50a2b61e95fceef333daa4f6d78e1f85e4ca32d0590f4d0390"
+    },
+    "gold": "A",
+    "order": 0,
+    "semantic_bit": 1,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-2-02",
+      "contract": "contract-387987499b077b81",
+      "state": {
+        "family": "url",
+        "input": "x/y2",
+        "operation": "encode"
+      },
+      "candidates": {
+        "A": "x/y2",
+        "B": "x%2Fy2"
+      },
+      "state_hash": "83ba46ed9bf5cc0a1f5ca4c4a58c202e48200f0a443a5b7477c3b475cebe3a6d"
+    },
+    "gold": "B",
+    "order": 0,
+    "semantic_bit": 0,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-2-05",
+      "contract": "contract-e94498dc6e18f88e",
+      "state": {
+        "family": "url",
+        "input": "c%2Bd5",
+        "operation": "decode"
+      },
+      "candidates": {
+        "A": "c+d5",
+        "B": "c%252Bd5"
+      },
+      "state_hash": "2288b13a70148742da286f26370e3d0eed024e8d7ca350d041baa0b57110247c"
+    },
+    "gold": "A",
+    "order": 1,
+    "semantic_bit": 1,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-1-01",
+      "contract": "contract-7f8c06f5b880cc56",
+      "state": {
+        "family": "date",
+        "date": "2027-01-29",
+        "start": "2027-01-18",
+        "end": "2027-01-29",
+        "blackout": []
+      },
+      "candidates": {
+        "A": "deny",
+        "B": "allow"
+      },
+      "state_hash": "61031bd9e1354ccc8baaf89fdf82fb6640044405910e0c6309d35e05d2c803f9"
+    },
+    "gold": "A",
+    "order": 0,
+    "semantic_bit": 1,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-2-06",
+      "contract": "contract-a966aab6caa510d2",
+      "state": {
+        "family": "url",
+        "input": "50%6",
+        "operation": "encode"
+      },
+      "candidates": {
+        "A": "50%6",
+        "B": "50%256"
+      },
+      "state_hash": "398d783805a391a64c8008a2d0d863fe415f25ab21cd75f6072fa6564e761dad"
+    },
+    "gold": "B",
+    "order": 1,
+    "semantic_bit": 0,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-1-03",
+      "contract": "contract-dd16c11dafd13763",
+      "state": {
+        "family": "date",
+        "date": "2027-02-23",
+        "start": "2027-02-21",
+        "end": "2027-03-06",
+        "blackout": [
+          "2027-02-23"
+        ]
+      },
+      "candidates": {
+        "A": "allow",
+        "B": "deny"
+      },
+      "state_hash": "d285856c6fb58e406642482fc92f1b89ef2d0f39a055263bfb11ca907e811fff"
+    },
+    "gold": "B",
+    "order": 0,
+    "semantic_bit": 1,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-2-15",
+      "contract": "contract-072f44f96e5fc24a",
+      "state": {
+        "family": "url",
+        "input": "%E6%9D%B1%E4%BA%AC15",
+        "operation": "decode"
+      },
+      "candidates": {
+        "A": "%25E6%259D%25B1%25E4%25BA%25AC15",
+        "B": "\u6771\u4eac15"
+      },
+      "state_hash": "282b29b2b8848143c7e56d333131860464d418a1656092d16fe185b708884735"
+    },
+    "gold": "B",
+    "order": 1,
+    "semantic_bit": 1,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-0-08",
+      "contract": "contract-2eac1166488bc591",
+      "state": {
+        "family": "type",
+        "value": {
+          "key": 8
+        },
+        "required_type": "object"
+      },
+      "candidates": {
+        "A": "accept",
+        "B": "reject"
+      },
+      "state_hash": "92ab6b9cdae664531c26c77e72c38cbc43ceb4cdee89356069a42a4e207eca38"
+    },
+    "gold": "A",
+    "order": 0,
+    "semantic_bit": 0,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-3-09",
+      "contract": "contract-357bd604a583ad58",
+      "state": {
+        "family": "policy",
+        "region": "R09",
+        "allow": [
+          "R39"
+        ],
+        "deny": []
+      },
+      "candidates": {
+        "A": "deny",
+        "B": "allow"
+      },
+      "state_hash": "37cdd4c4e81a681677f78000447c0e3c5e1a3dbfa85edaf31611f452e37ce41c"
+    },
+    "gold": "A",
+    "order": 0,
+    "semantic_bit": 1,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-2-13",
+      "contract": "contract-97821fdad640d14c",
+      "state": {
+        "family": "url",
+        "input": "x%23y13",
+        "operation": "decode"
+      },
+      "candidates": {
+        "A": "x#y13",
+        "B": "x%2523y13"
+      },
+      "state_hash": "847e41814baa05a2fc2f959a063ecf2d5ee54e90d34bb014b62458e2f002ba85"
+    },
+    "gold": "A",
+    "order": 1,
+    "semantic_bit": 1,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-3-08",
+      "contract": "contract-74ffb93af241c917",
+      "state": {
+        "family": "policy",
+        "region": "R08",
+        "allow": [
+          "R08",
+          "R38"
+        ],
+        "deny": []
+      },
+      "candidates": {
+        "A": "allow",
+        "B": "deny"
+      },
+      "state_hash": "6e6779d09a35671c5668f647ccabaaa2c29674d08b2c66cee03ecee0134c072b"
+    },
+    "gold": "A",
+    "order": 0,
+    "semantic_bit": 0,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-1-08",
+      "contract": "contract-bbd14c6a1f8c3155",
+      "state": {
+        "family": "date",
+        "date": "2027-05-21",
+        "start": "2027-05-17",
+        "end": "2027-06-04",
+        "blackout": []
+      },
+      "candidates": {
+        "A": "allow",
+        "B": "deny"
+      },
+      "state_hash": "46181f1217cf697c8f2efa40002b2b876e80f6106d11df1bc24a4e2f916bc438"
+    },
+    "gold": "A",
+    "order": 0,
+    "semantic_bit": 0,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-1-09",
+      "contract": "contract-a2d269acdab54204",
+      "state": {
+        "family": "date",
+        "date": "2027-06-22",
+        "start": "2027-06-03",
+        "end": "2027-06-22",
+        "blackout": []
+      },
+      "candidates": {
+        "A": "deny",
+        "B": "allow"
+      },
+      "state_hash": "23af59e5216d7dee24f3253cb990b574feac567e11bc8d08cabaead301f505af"
+    },
+    "gold": "A",
+    "order": 0,
+    "semantic_bit": 1,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-0-06",
+      "contract": "contract-2e2c95ebeb477273",
+      "state": {
+        "family": "type",
+        "value": [
+          6,
+          "x"
+        ],
+        "required_type": "array"
+      },
+      "candidates": {
+        "A": "reject",
+        "B": "accept"
+      },
+      "state_hash": "4cc35af3f75331b209e5feb0bb9dae7855e776d93ba697cdacfbea32119dba01"
+    },
+    "gold": "B",
+    "order": 1,
+    "semantic_bit": 0,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-0-11",
+      "contract": "contract-fd45e4004e044584",
+      "state": {
+        "family": "type",
+        "value": 11.25,
+        "required_type": "string"
+      },
+      "candidates": {
+        "A": "accept",
+        "B": "reject"
+      },
+      "state_hash": "648a5b631e4fb40568d69e45888fedd5a022c2be5dcdb87dbc17f8089974bcfe"
+    },
+    "gold": "B",
+    "order": 0,
+    "semantic_bit": 1,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-2-11",
+      "contract": "contract-0079ff3b3c39e29d",
+      "state": {
+        "family": "url",
+        "input": "a%3Fb%3Dc11",
+        "operation": "decode"
+      },
+      "candidates": {
+        "A": "a%253Fb%253Dc11",
+        "B": "a?b=c11"
+      },
+      "state_hash": "810f229b795fb1dc7a95542dba7244a1baadb00d3ecfee1ff08eea98bc3b3d86"
+    },
+    "gold": "B",
+    "order": 0,
+    "semantic_bit": 1,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-2-08",
+      "contract": "contract-1277cec3450be315",
+      "state": {
+        "family": "url",
+        "input": "\u00e9 \u00fc8",
+        "operation": "encode"
+      },
+      "candidates": {
+        "A": "%C3%A9%20%C3%BC8",
+        "B": "\u00e9 \u00fc8"
+      },
+      "state_hash": "9880d751b60ac324d52d79d650ba5c84c743b9bc502803bcbe2ef5695d76dc25"
+    },
+    "gold": "A",
+    "order": 0,
+    "semantic_bit": 0,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-0-02",
+      "contract": "contract-9bac13e354f204e8",
+      "state": {
+        "family": "type",
+        "value": 19,
+        "required_type": "integer"
+      },
+      "candidates": {
+        "A": "reject",
+        "B": "accept"
+      },
+      "state_hash": "8952bd2e8f6d7bc0d070300e41a5844bc544b53977062e5783cf7c2cd04bdaf8"
+    },
+    "gold": "B",
+    "order": 0,
+    "semantic_bit": 0,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-3-14",
+      "contract": "contract-6a728a7c09930fb4",
+      "state": {
+        "family": "policy",
+        "region": "R14",
+        "allow": [
+          "R14",
+          "R44"
+        ],
+        "deny": []
+      },
+      "candidates": {
+        "A": "deny",
+        "B": "allow"
+      },
+      "state_hash": "d4624808a0a92637ab57a1979f4b49701554ff08d07369cc9dbbc18dbef0475b"
+    },
+    "gold": "B",
+    "order": 1,
+    "semantic_bit": 0,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-0-03",
+      "contract": "contract-855ba2f3b4145460",
+      "state": {
+        "family": "type",
+        "value": 20,
+        "required_type": "string"
+      },
+      "candidates": {
+        "A": "accept",
+        "B": "reject"
+      },
+      "state_hash": "cf1b92ba39a941030333562cb99509a2f23a4491b2930d4310d5c264c769780e"
+    },
+    "gold": "B",
+    "order": 0,
+    "semantic_bit": 1,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-2-12",
+      "contract": "contract-9bd3cbbbd1b9d1a7",
+      "state": {
+        "family": "url",
+        "input": "x#y12",
+        "operation": "encode"
+      },
+      "candidates": {
+        "A": "x%23y12",
+        "B": "x#y12"
+      },
+      "state_hash": "581118e7c77329527493cf3db242b4b27d6509cda6552498b9d438ccf096dd9e"
+    },
+    "gold": "A",
+    "order": 1,
+    "semantic_bit": 0,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-3-07",
+      "contract": "contract-4dc12014e3edb57d",
+      "state": {
+        "family": "policy",
+        "region": "R07",
+        "allow": [
+          "R07",
+          "R37"
+        ],
+        "deny": [
+          "R07"
+        ]
+      },
+      "candidates": {
+        "A": "allow",
+        "B": "deny"
+      },
+      "state_hash": "fbfffca218a0fba1f4ea29d53e64ab0e0382a5653fdd8987db924edad842de4f"
+    },
+    "gold": "B",
+    "order": 1,
+    "semantic_bit": 1,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-0-00",
+      "contract": "contract-7285b41512277070",
+      "state": {
+        "family": "type",
+        "value": "17",
+        "required_type": "string"
+      },
+      "candidates": {
+        "A": "accept",
+        "B": "reject"
+      },
+      "state_hash": "0a9667f8ecd709ac778e77c2d2463db10b6affc801e9388a20498cf34a39020b"
+    },
+    "gold": "A",
+    "order": 0,
+    "semantic_bit": 0,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-1-07",
+      "contract": "contract-3ad7abcc7cfbd64c",
+      "state": {
+        "family": "date",
+        "date": "2027-05-02",
+        "start": "2027-04-30",
+        "end": "2027-05-17",
+        "blackout": [
+          "2027-05-02"
+        ]
+      },
+      "candidates": {
+        "A": "allow",
+        "B": "deny"
+      },
+      "state_hash": "75f0ccc668fa2d7dbeda62d8cc27c85e01d5f6c925c7140cc94c3e4fdc5c85c7"
+    },
+    "gold": "B",
+    "order": 1,
+    "semantic_bit": 1,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-2-04",
+      "contract": "contract-196de697f902945a",
+      "state": {
+        "family": "url",
+        "input": "c+d4",
+        "operation": "encode"
+      },
+      "candidates": {
+        "A": "c%2Bd4",
+        "B": "c+d4"
+      },
+      "state_hash": "3ce5ccab423e99ccbee1a9177d90ecf6498fe42907eb61caa365b588dc1d78ab"
+    },
+    "gold": "A",
+    "order": 1,
+    "semantic_bit": 0,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-1-02",
+      "contract": "contract-9eb4b13598490d8f",
+      "state": {
+        "family": "date",
+        "date": "2027-02-05",
+        "start": "2027-02-04",
+        "end": "2027-02-16",
+        "blackout": []
+      },
+      "candidates": {
+        "A": "deny",
+        "B": "allow"
+      },
+      "state_hash": "8d60ef016e1d66e0ffa2ca0f155bdbf12eb4b82421c2574e525ef08c153fe8b8"
+    },
+    "gold": "B",
+    "order": 0,
+    "semantic_bit": 0,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-2-01",
+      "contract": "contract-98c6ba5b8c8536c4",
+      "state": {
+        "family": "url",
+        "input": "a%20b1",
+        "operation": "decode"
+      },
+      "candidates": {
+        "A": "a b1",
+        "B": "a%2520b1"
+      },
+      "state_hash": "924c5cb034f3c3fba96de55e8d1f2b1b3ed6e307ae88c166e0dc9e258006e76c"
+    },
+    "gold": "A",
+    "order": 0,
+    "semantic_bit": 1,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-1-06",
+      "contract": "contract-2fe37dc37a1484a1",
+      "state": {
+        "family": "date",
+        "date": "2027-04-16",
+        "start": "2027-04-13",
+        "end": "2027-04-29",
+        "blackout": []
+      },
+      "candidates": {
+        "A": "deny",
+        "B": "allow"
+      },
+      "state_hash": "2f80564eecb3bada11a979f3fb43ce4a901c2e5b4d0d78886e1493db4b74c9c2"
+    },
+    "gold": "B",
+    "order": 1,
+    "semantic_bit": 0,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-0-10",
+      "contract": "contract-f554e19637e49f00",
+      "state": {
+        "family": "type",
+        "value": 10.25,
+        "required_type": "number"
+      },
+      "candidates": {
+        "A": "reject",
+        "B": "accept"
+      },
+      "state_hash": "d56b7a621b8e4550f5b8d61f003660c15782e36bc89082a81ee5fb4ff3878ed6"
+    },
+    "gold": "B",
+    "order": 0,
+    "semantic_bit": 0,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-0-14",
+      "contract": "contract-449bbfa2547a2bd8",
+      "state": {
+        "family": "type",
+        "value": "false",
+        "required_type": "string"
+      },
+      "candidates": {
+        "A": "reject",
+        "B": "accept"
+      },
+      "state_hash": "847b96410ba4c9ef16ffe1baaf9a514d04da7bb64be224c147325768b12f559b"
+    },
+    "gold": "B",
+    "order": 1,
+    "semantic_bit": 0,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-0-07",
+      "contract": "contract-273c71142b2d5614",
+      "state": {
+        "family": "type",
+        "value": [
+          7,
+          "x"
+        ],
+        "required_type": "string"
+      },
+      "candidates": {
+        "A": "accept",
+        "B": "reject"
+      },
+      "state_hash": "cc9d3a9a6e4cf9ae455eb1457a98d5a038d906ba609e2eb1758dc1dcb65a9575"
+    },
+    "gold": "B",
+    "order": 1,
+    "semantic_bit": 1,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-2-00",
+      "contract": "contract-6eb0b39607029fb2",
+      "state": {
+        "family": "url",
+        "input": "a b0",
+        "operation": "encode"
+      },
+      "candidates": {
+        "A": "a%20b0",
+        "B": "a b0"
+      },
+      "state_hash": "5163f886600b2375908b4d165c699ca0e92d035197af76626ce6a76fcd2e8933"
+    },
+    "gold": "A",
+    "order": 0,
+    "semantic_bit": 0,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-1-00",
+      "contract": "contract-35ed9fe41a0835c9",
+      "state": {
+        "family": "date",
+        "date": "2027-01-01",
+        "start": "2027-01-01",
+        "end": "2027-01-11",
+        "blackout": []
+      },
+      "candidates": {
+        "A": "allow",
+        "B": "deny"
+      },
+      "state_hash": "e0ea5e0f9fc06077a740d274f650e2ad7b59e60bebbe5c0c2bdbf3e23220c6ca"
+    },
+    "gold": "A",
+    "order": 0,
+    "semantic_bit": 0,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-3-15",
+      "contract": "contract-66f106a89dcedf90",
+      "state": {
+        "family": "policy",
+        "region": "R15",
+        "allow": [
+          "R15",
+          "R45"
+        ],
+        "deny": [
+          "R15"
+        ]
+      },
+      "candidates": {
+        "A": "allow",
+        "B": "deny"
+      },
+      "state_hash": "b66d195d391520d8929a8caa61ab0e2af03e9cadb7338aa5e61b478900466cb8"
+    },
+    "gold": "B",
+    "order": 1,
+    "semantic_bit": 1,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-0-15",
+      "contract": "contract-6db81c2fb2612787",
+      "state": {
+        "family": "type",
+        "value": "false",
+        "required_type": "integer"
+      },
+      "candidates": {
+        "A": "accept",
+        "B": "reject"
+      },
+      "state_hash": "c87a1aa9da5fa0e4a5962b1707d5ab95cb165863e2893d9c34c8d81837912a75"
+    },
+    "gold": "B",
+    "order": 1,
+    "semantic_bit": 1,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-2-07",
+      "contract": "contract-7e37ec4eca3a5737",
+      "state": {
+        "family": "url",
+        "input": "50%257",
+        "operation": "decode"
+      },
+      "candidates": {
+        "A": "50%25257",
+        "B": "50%7"
+      },
+      "state_hash": "94a31607be4bba4cc7dcff21dfae83f1b0e6209bfebafaf1d14f30a5f0d98c92"
+    },
+    "gold": "B",
+    "order": 1,
+    "semantic_bit": 1,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-2-14",
+      "contract": "contract-80aec8d55cedd498",
+      "state": {
+        "family": "url",
+        "input": "\u6771\u4eac14",
+        "operation": "encode"
+      },
+      "candidates": {
+        "A": "\u6771\u4eac14",
+        "B": "%E6%9D%B1%E4%BA%AC14"
+      },
+      "state_hash": "0b7554cf83534873d6e147c48cd281d72ba2b9027b8f45d4360658aa407c7fb1"
+    },
+    "gold": "B",
+    "order": 1,
+    "semantic_bit": 0,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-3-03",
+      "contract": "contract-c800d1c9de913b12",
+      "state": {
+        "family": "policy",
+        "region": "R03",
+        "allow": [
+          "R03",
+          "R33"
+        ],
+        "deny": [
+          "R03"
+        ]
+      },
+      "candidates": {
+        "A": "allow",
+        "B": "deny"
+      },
+      "state_hash": "1435eed3b4c850b8b561295c99d10281dfae0c78b43fd9a4e375118d82486dc0"
+    },
+    "gold": "B",
+    "order": 0,
+    "semantic_bit": 1,
+    "identity_order": 0
+  },
+  {
+    "case": {
+      "case_id": "v5-0-13",
+      "contract": "contract-4b635b4af43bd5fc",
+      "state": {
+        "family": "type",
+        "value": null,
+        "required_type": "string"
+      },
+      "candidates": {
+        "A": "reject",
+        "B": "accept"
+      },
+      "state_hash": "924243f356bec52540588f6e98a2b8fd3d2625fd38780380718a4ef73e7e96ae"
+    },
+    "gold": "A",
+    "order": 1,
+    "semantic_bit": 1,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-1-10",
+      "contract": "contract-b2dfa34034b78791",
+      "state": {
+        "family": "date",
+        "date": "2027-06-20",
+        "start": "2027-06-20",
+        "end": "2027-07-10",
+        "blackout": []
+      },
+      "candidates": {
+        "A": "deny",
+        "B": "allow"
+      },
+      "state_hash": "8167da99292d12f906ee2d5430c635b60e3021dd7d37183d808c5686f77e86fa"
+    },
+    "gold": "B",
+    "order": 0,
+    "semantic_bit": 0,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-0-12",
+      "contract": "contract-8b2d0d150bc736fb",
+      "state": {
+        "family": "type",
+        "value": null,
+        "required_type": "null"
+      },
+      "candidates": {
+        "A": "accept",
+        "B": "reject"
+      },
+      "state_hash": "d5932df3f89eaa116e3339e61e2bb169f6c24cc0c2986c143ed5d6903c1a13a6"
+    },
+    "gold": "A",
+    "order": 1,
+    "semantic_bit": 0,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-3-10",
+      "contract": "contract-b90a311b5816f59b",
+      "state": {
+        "family": "policy",
+        "region": "R10",
+        "allow": [
+          "R10",
+          "R40"
+        ],
+        "deny": []
+      },
+      "candidates": {
+        "A": "deny",
+        "B": "allow"
+      },
+      "state_hash": "33fddd57a6a2f40dbe62bda5fc3b1e78e82f4db9a13d561c384b1e89eec6d345"
+    },
+    "gold": "B",
+    "order": 0,
+    "semantic_bit": 0,
+    "identity_order": 1
+  },
+  {
+    "case": {
+      "case_id": "v5-1-12",
+      "contract": "contract-4fd32d6ebf7f59fa",
+      "state": {
+        "family": "date",
+        "date": "2027-07-25",
+        "start": "2027-07-24",
+        "end": "2027-08-15",
+        "blackout": []
+      },
+      "candidates": {
+        "A": "allow",
+        "B": "deny"
+      },
+      "state_hash": "7a243107ebeb12bad9cdbce07ccc68d5f6153bfb30f6be846e9975d88f6c1686"
+    },
+    "gold": "A",
+    "order": 1,
+    "semantic_bit": 0,
+    "identity_order": 1
+  }
+]

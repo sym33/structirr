@@ -1,0 +1,73 @@
+{
+  "models": [
+    {
+      "name": "llama3.3:70b",
+      "model": "llama3.3:70b",
+      "modified_at": "2026-08-25T19:15:21.484699803+02:00",
+      "size": 42520413916,
+      "digest": "a6eb4748fd2990ad2952b2335a95a7f952d1a06119a0aa6a2df6cd052a93a3fa",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "70.6B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 131072,
+        "embedding_length": 8192
+      },
+      "capabilities": [
+        "completion",
+        "tools"
+      ]
+    },
+    {
+      "name": "qwen2.5:32b",
+      "model": "qwen2.5:32b",
+      "modified_at": "2026-08-25T19:08:49.099368775+02:00",
+      "size": 19851349669,
+      "digest": "9f13ba1299afea09d9a956fc6a85becc99115a6d596fae201a5487a03bdc4368",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "32.8B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 32768,
+        "embedding_length": 5120
+      },
+      "capabilities": [
+        "completion",
+        "tools"
+      ]
+    },
+    {
+      "name": "llama3.1:8b",
+      "model": "llama3.1:8b",
+      "modified_at": "2026-08-25T18:59:13.722429544+02:00",
+      "size": 4920753328,
+      "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "8.0B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 131072,
+        "embedding_length": 4096
+      },
+      "capabilities": [
+        "completion",
+        "tools"
+      ]
+    }
+  ]
+}

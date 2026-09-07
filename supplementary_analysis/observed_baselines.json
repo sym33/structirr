@@ -1,0 +1,458 @@
+{
+  "qwen2.5:32b": {
+    "n": 960,
+    "baselines": {
+      "standing_rule": 960,
+      "preserve": 875,
+      "solve_case": 790,
+      "first_record": 576,
+      "last_record": 576,
+      "ignore_case_id": 864,
+      "ignore_contract": 864,
+      "ignore_state_hash": 864,
+      "ignore_integrity": 864,
+      "observed_model": 892
+    },
+    "transitions": {
+      "current": {
+        "correction": 11,
+        "wrong_n": 17,
+        "preservation": 47,
+        "right_n": 47,
+        "concordance": 58
+      },
+      "invalid_case_id_support": {
+        "correction": 1,
+        "wrong_n": 17,
+        "preservation": 47,
+        "right_n": 47,
+        "concordance": 63
+      },
+      "invalid_case_id_oppose": {
+        "correction": 0,
+        "wrong_n": 17,
+        "preservation": 43,
+        "right_n": 47,
+        "concordance": 60
+      },
+      "invalid_contract_support": {
+        "correction": 3,
+        "wrong_n": 17,
+        "preservation": 46,
+        "right_n": 47,
+        "concordance": 60
+      },
+      "invalid_contract_oppose": {
+        "correction": 0,
+        "wrong_n": 17,
+        "preservation": 41,
+        "right_n": 47,
+        "concordance": 58
+      },
+      "invalid_state_hash_support": {
+        "correction": 2,
+        "wrong_n": 17,
+        "preservation": 46,
+        "right_n": 47,
+        "concordance": 61
+      },
+      "invalid_state_hash_oppose": {
+        "correction": 1,
+        "wrong_n": 17,
+        "preservation": 40,
+        "right_n": 47,
+        "concordance": 56
+      },
+      "invalid_integrity_support": {
+        "correction": 0,
+        "wrong_n": 17,
+        "preservation": 47,
+        "right_n": 47,
+        "concordance": 64
+      },
+      "invalid_integrity_oppose": {
+        "correction": 0,
+        "wrong_n": 17,
+        "preservation": 46,
+        "right_n": 47,
+        "concordance": 63
+      },
+      "conflict_case_id": {
+        "correction": 14,
+        "wrong_n": 17,
+        "preservation": 44,
+        "right_n": 47,
+        "concordance": 58
+      },
+      "conflict_contract": {
+        "correction": 13,
+        "wrong_n": 17,
+        "preservation": 43,
+        "right_n": 47,
+        "concordance": 56
+      },
+      "conflict_state_hash": {
+        "correction": 10,
+        "wrong_n": 17,
+        "preservation": 42,
+        "right_n": 47,
+        "concordance": 52
+      },
+      "conflict_integrity": {
+        "correction": 17,
+        "wrong_n": 17,
+        "preservation": 47,
+        "right_n": 47,
+        "concordance": 64
+      },
+      "neutral": {
+        "correction": 0,
+        "wrong_n": 17,
+        "preservation": 45,
+        "right_n": 47,
+        "concordance": 62
+      },
+      "no_evidence": {
+        "correction": 1,
+        "wrong_n": 17,
+        "preservation": 41,
+        "right_n": 47,
+        "concordance": 57
+      }
+    },
+    "first_strata": {
+      "family": {
+        "type": {
+          "correct": 10,
+          "n": 16
+        },
+        "date": {
+          "correct": 11,
+          "n": 16
+        },
+        "url": {
+          "correct": 11,
+          "n": 16
+        },
+        "policy": {
+          "correct": 15,
+          "n": 16
+        }
+      },
+      "gold": {
+        "A": {
+          "correct": 21,
+          "n": 32
+        },
+        "B": {
+          "correct": 26,
+          "n": 32
+        }
+      }
+    }
+  },
+  "llama3.3:70b": {
+    "n": 960,
+    "baselines": {
+      "standing_rule": 960,
+      "preserve": 825,
+      "solve_case": 690,
+      "first_record": 576,
+      "last_record": 576,
+      "ignore_case_id": 864,
+      "ignore_contract": 864,
+      "ignore_state_hash": 864,
+      "ignore_integrity": 864,
+      "observed_model": 861
+    },
+    "transitions": {
+      "current": {
+        "correction": 25,
+        "wrong_n": 27,
+        "preservation": 37,
+        "right_n": 37,
+        "concordance": 62
+      },
+      "invalid_case_id_support": {
+        "correction": 0,
+        "wrong_n": 27,
+        "preservation": 37,
+        "right_n": 37,
+        "concordance": 64
+      },
+      "invalid_case_id_oppose": {
+        "correction": 0,
+        "wrong_n": 27,
+        "preservation": 37,
+        "right_n": 37,
+        "concordance": 64
+      },
+      "invalid_contract_support": {
+        "correction": 9,
+        "wrong_n": 27,
+        "preservation": 37,
+        "right_n": 37,
+        "concordance": 55
+      },
+      "invalid_contract_oppose": {
+        "correction": 0,
+        "wrong_n": 27,
+        "preservation": 19,
+        "right_n": 37,
+        "concordance": 46
+      },
+      "invalid_state_hash_support": {
+        "correction": 19,
+        "wrong_n": 27,
+        "preservation": 37,
+        "right_n": 37,
+        "concordance": 45
+      },
+      "invalid_state_hash_oppose": {
+        "correction": 0,
+        "wrong_n": 27,
+        "preservation": 13,
+        "right_n": 37,
+        "concordance": 40
+      },
+      "invalid_integrity_support": {
+        "correction": 0,
+        "wrong_n": 27,
+        "preservation": 37,
+        "right_n": 37,
+        "concordance": 64
+      },
+      "invalid_integrity_oppose": {
+        "correction": 0,
+        "wrong_n": 27,
+        "preservation": 36,
+        "right_n": 37,
+        "concordance": 63
+      },
+      "conflict_case_id": {
+        "correction": 26,
+        "wrong_n": 27,
+        "preservation": 37,
+        "right_n": 37,
+        "concordance": 63
+      },
+      "conflict_contract": {
+        "correction": 20,
+        "wrong_n": 27,
+        "preservation": 37,
+        "right_n": 37,
+        "concordance": 57
+      },
+      "conflict_state_hash": {
+        "correction": 9,
+        "wrong_n": 27,
+        "preservation": 37,
+        "right_n": 37,
+        "concordance": 46
+      },
+      "conflict_integrity": {
+        "correction": 27,
+        "wrong_n": 27,
+        "preservation": 37,
+        "right_n": 37,
+        "concordance": 64
+      },
+      "neutral": {
+        "correction": 0,
+        "wrong_n": 27,
+        "preservation": 37,
+        "right_n": 37,
+        "concordance": 64
+      },
+      "no_evidence": {
+        "correction": 0,
+        "wrong_n": 27,
+        "preservation": 37,
+        "right_n": 37,
+        "concordance": 64
+      }
+    },
+    "first_strata": {
+      "family": {
+        "type": {
+          "correct": 8,
+          "n": 16
+        },
+        "date": {
+          "correct": 8,
+          "n": 16
+        },
+        "url": {
+          "correct": 9,
+          "n": 16
+        },
+        "policy": {
+          "correct": 12,
+          "n": 16
+        }
+      },
+      "gold": {
+        "A": {
+          "correct": 20,
+          "n": 32
+        },
+        "B": {
+          "correct": 17,
+          "n": 32
+        }
+      }
+    }
+  },
+  "gpt-5.6-luna": {
+    "n": 960,
+    "baselines": {
+      "standing_rule": 960,
+      "preserve": 935,
+      "solve_case": 910,
+      "first_record": 576,
+      "last_record": 576,
+      "ignore_case_id": 864,
+      "ignore_contract": 864,
+      "ignore_state_hash": 864,
+      "ignore_integrity": 864,
+      "observed_model": 930
+    },
+    "transitions": {
+      "current": {
+        "correction": 5,
+        "wrong_n": 5,
+        "preservation": 59,
+        "right_n": 59,
+        "concordance": 64
+      },
+      "invalid_case_id_support": {
+        "correction": 0,
+        "wrong_n": 5,
+        "preservation": 57,
+        "right_n": 59,
+        "concordance": 62
+      },
+      "invalid_case_id_oppose": {
+        "correction": 0,
+        "wrong_n": 5,
+        "preservation": 55,
+        "right_n": 59,
+        "concordance": 60
+      },
+      "invalid_contract_support": {
+        "correction": 3,
+        "wrong_n": 5,
+        "preservation": 59,
+        "right_n": 59,
+        "concordance": 61
+      },
+      "invalid_contract_oppose": {
+        "correction": 0,
+        "wrong_n": 5,
+        "preservation": 47,
+        "right_n": 59,
+        "concordance": 52
+      },
+      "invalid_state_hash_support": {
+        "correction": 0,
+        "wrong_n": 5,
+        "preservation": 56,
+        "right_n": 59,
+        "concordance": 61
+      },
+      "invalid_state_hash_oppose": {
+        "correction": 0,
+        "wrong_n": 5,
+        "preservation": 57,
+        "right_n": 59,
+        "concordance": 62
+      },
+      "invalid_integrity_support": {
+        "correction": 0,
+        "wrong_n": 5,
+        "preservation": 59,
+        "right_n": 59,
+        "concordance": 64
+      },
+      "invalid_integrity_oppose": {
+        "correction": 0,
+        "wrong_n": 5,
+        "preservation": 59,
+        "right_n": 59,
+        "concordance": 64
+      },
+      "conflict_case_id": {
+        "correction": 5,
+        "wrong_n": 5,
+        "preservation": 59,
+        "right_n": 59,
+        "concordance": 64
+      },
+      "conflict_contract": {
+        "correction": 5,
+        "wrong_n": 5,
+        "preservation": 58,
+        "right_n": 59,
+        "concordance": 63
+      },
+      "conflict_state_hash": {
+        "correction": 5,
+        "wrong_n": 5,
+        "preservation": 59,
+        "right_n": 59,
+        "concordance": 64
+      },
+      "conflict_integrity": {
+        "correction": 5,
+        "wrong_n": 5,
+        "preservation": 56,
+        "right_n": 59,
+        "concordance": 61
+      },
+      "neutral": {
+        "correction": 0,
+        "wrong_n": 5,
+        "preservation": 59,
+        "right_n": 59,
+        "concordance": 64
+      },
+      "no_evidence": {
+        "correction": 0,
+        "wrong_n": 5,
+        "preservation": 59,
+        "right_n": 59,
+        "concordance": 64
+      }
+    },
+    "first_strata": {
+      "family": {
+        "type": {
+          "correct": 14,
+          "n": 16
+        },
+        "date": {
+          "correct": 15,
+          "n": 16
+        },
+        "url": {
+          "correct": 14,
+          "n": 16
+        },
+        "policy": {
+          "correct": 16,
+          "n": 16
+        }
+      },
+      "gold": {
+        "A": {
+          "correct": 32,
+          "n": 32
+        },
+        "B": {
+          "correct": 27,
+          "n": 32
+        }
+      }
+    }
+  }
+}
