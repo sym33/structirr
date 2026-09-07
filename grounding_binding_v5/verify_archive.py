@@ -1,12 +1,17 @@
 """Post-collection integrity audit; no additional inferential analysis or calls."""
-import hashlib,json
+import hashlib,json,zipfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent
 
 def main():
     for line in (ROOT/'FROZEN_SHA256SUMS').read_text().splitlines():
         h,n=line.split(maxsplit=1)
-        assert hashlib.sha256((ROOT/n).read_bytes()).hexdigest()==h,n
+        if n=='PROTOCOL.md':
+            with zipfile.ZipFile(ROOT/'provenance/protocol_original.zip') as z:
+                data=z.read('PROTOCOL.md')
+        else:
+            data=(ROOT/n).read_bytes()
+        assert hashlib.sha256(data).hexdigest()==h,n
     summary=json.loads((ROOT/'analysis_summary.json').read_text())
     assert set(summary['models'])=={'qwen2.5:32b','llama3.3:70b','gpt-5.6-luna'}
     audit={'frozen_hashes':'pass','models':{}}

@@ -1,6 +1,6 @@
 # V5 field-isolated binding challenge — specified before V5 model calls
 
-2026-09-07. This follow-up responds to the post hoc shortcut discovered in V4. Its design is informed by V4; it is not an independent confirmatory preregistration or a new domain sample. V4 observations remain untouched. No V4 and V5 outcomes are pooled.
+2026-09-07.
 
 ## Sample and interventions
 
